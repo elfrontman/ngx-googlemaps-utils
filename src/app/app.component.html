@@ -1,1 +1,22 @@
-<lib-ngx-googlemaps-viewer></lib-ngx-googlemaps-viewer>
+<ngx-googlemaps-map
+  [latitude]="coordenate.lat"
+  [longitude]="coordenate.lng"
+  [zoom]="13">
+  <ngx-googlemaps-marker
+    [latitude]="coordenate.lat"
+    [longitude]="coordenate.lng"
+    [title]="'Marker'">
+    <ngx-googlemaps-info-window>
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Ash%27s_Greninja" class="L-12 M-12 S-12 columns" >
+        <strong>Aladin Hotel</strong>
+        <br>
+        ABC12377ASD<br>
+        <div class="imageConteiner">
+          <img src="https://archives.bulbagarden.net/media/upload/7/77/Ash_Greninja.png" alt="">
+        </div>
+      </a>
+    </ngx-googlemaps-info-window>
+  </ngx-googlemaps-marker>
+</ngx-googlemaps-map>
+
+
