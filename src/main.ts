@@ -12,6 +12,6 @@ bootstrapApplication(AppComponent, {
     providers: [importProvidersFrom(
       BrowserModule,
       AppRoutingModule,
-      NgxGooglemapsViewerModule.forRoot({apiKey: 'AIzaSyBE4Ez0EZ8eVhA1UMjqNgjnDnj1MvaW-LQ'}))]
+      NgxGooglemapsViewerModule.forRoot({apiKey: ''}))]
 })
   .catch(err => console.error(err));
