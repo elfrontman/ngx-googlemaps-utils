@@ -31,6 +31,10 @@ export class NgxGooglemapsMarkerComponent {
   private async loadMarker(){
     const { AdvancedMarkerElement } = await this.mapService.getMarkerLibrary();
 
+    if(isNaN(this.latitude) || isNaN(this.longitude)){
+      return;
+    }
+
     this._marker = new AdvancedMarkerElement({
       map: this._map,
       title: this.title,
